@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<!-- block content -->
+  <h2>Login</h2>
+  <form method="post">
+      {{ form.csrf_token }}
+      <br>{{ form.email.label }} <br> {{ form.email(required='true') }} <br>
+      <br>{{ form.password.label }} <br> {{ form.password(required='true') }} <br>
+      <br>{{ form.remember_me }} {{ form.remember_me.label }} <br>
+      <br> {{ form.submit }}
+  </form>
+  <div>
+    <a href="{{ url_for('auth.register') }}">Зарегестрироваться</a>
+  </div>
+<!-- end block content -->
+{% endblock %}

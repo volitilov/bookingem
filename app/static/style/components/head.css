@@ -1,0 +1,71 @@
+.head {
+  display: block;
+  overflow: hidden;
+  background-color: #F0F0F0;
+  padding: 20px 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.head li,
+a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.head img {
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+}
+.head i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.head a {
+  text-decoration: none;
+  margin: 0px 8px;
+}
+.navbar-left {
+  float: left;
+}
+.navbar-left span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-right span,
+.navbar-left span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.navbar-right img {
+  border-radius: 50%;
+}
+.dropdown .dropdown-togle {
+  position: absolute;
+  margin-top: 20px;
+  right: 100px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.dropdown .dropdown-togle i {
+  margin-right: 15px;
+}
+.dropdown .dropdown-togle li {
+  padding: 15px;
+}
+.dropdown .dropdown-togle li:first-child {
+  background-color: #eee;
+}
+.dropdown .dropdown-togle li:first-child span a {
+  display: block;
+}
+.dropdown .dropdown-togle li {
+  display: block;
+}
+.dropdown .active {
+  display: block;
+}

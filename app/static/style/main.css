@@ -1,0 +1,13 @@
+body {
+  background-color: #FAFAFA;
+  line-height: 1.5;
+}
+main {
+  padding: 50px 100px;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: #000;
+}
