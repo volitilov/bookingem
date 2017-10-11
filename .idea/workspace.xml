@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aebfa4da-6418-4d74-af9a-7bfc75fe76c0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/auth/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/auth/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/auth/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/email.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/main/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/main/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/main/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/images/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/images/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/images/photo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/js/button_close.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/js/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/components/button_close.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/components/flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/components/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/components/head.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/components/head.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/lib/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/style/main.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/admin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/change_password.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/email/confirm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/email/confirm.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/books.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/components/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/components/head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/mail/new_user.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/mail/new_user.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_dev.sqlite" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/alembic.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/env.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/script.py.mako" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/versions/143ee26bebfe_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/versions/2e220b2d3e97_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/versions/c17807a1aeef_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/requirement.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_basics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_user_model.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/my_site/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/my_site/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bookingem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookingem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookingem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookingem" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookingem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookingem" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="my_site" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aebfa4da-6418-4d74-af9a-7bfc75fe76c0" name="Default" comment="" />
+      <created>1507643807121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507643807121</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1366" height="770" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18328446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/my_site/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
