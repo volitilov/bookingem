@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <div class="body">
+        <div class="categories">
+            <ul>
+                {% for category in categories %}
+                    <li><a href="{% url 'books' category.category_name %}">
+                        {% if category.category_name == 'Программирование' %}
+                            <i class="material-icons">code</i>
+                        {% elif category.category_name == 'Веб технологии' %}
+                            <i class="material-icons">language</i>
+                        {% elif category.category_name == 'Безопасность' %}
+                            <i class="material-icons">security</i>
+                        {% elif category.category_name == 'Разработка' %}
+                            <i class="material-icons">content_paste</i>
+                        {% elif category.category_name == 'Базы данных' %}
+                            <i class="material-icons">storage</i>
+                        {% elif category.category_name == 'Операционные системы' %}
+                            <i class="material-icons">devices</i>
+                        {% elif category.category_name == 'Прочее' %}
+                            <i class="material-icons">folder_open</i>
+                        {% endif %}
+                        {{ category.category_name }}
+                    </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

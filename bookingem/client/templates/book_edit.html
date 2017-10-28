@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <div class="body">
+        {% include 'components/_sidebar.html' %}
+        <div class="col-md-9">
+            <form action="" method="post" {% if form.is_multipart %} enctype="multipart/form-data" {% endif %}>
+                {% csrf_token %}
+                <table>
+                    {{ form.as_table }}
+                </table>
+                <input type="submit" value="Сохранить">
+            </form>
+            <a href="{{ prev_page }}">Назад</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

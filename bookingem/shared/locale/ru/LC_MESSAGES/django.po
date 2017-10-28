@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-25 13:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: client/templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"Здравствуйте, %(site_name)s!\n"
+"\n"
+"Вы получаете это письмо, так как пользователь %(user_display)s на "
+"%(site_domain)s указал эту почту при регистрации.\n"
+"\n"
+"Для того, чтобы подтвердить, регистрацию, перейдите по ссылке "
+"%(activate_url)s\n"
+msgstr ""
+
+#: client/templates/account/email/email_confirmation_message.txt:7
+#, python-format
+msgid ""
+"Спасибо,%(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+
+#: client/templates/account/email/email_confirmation_subject.txt:3
+msgid "Подтвердите ваш E-mail, пожалуйста"
+msgstr ""
+
+#: client/templates/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"Здравствуйте, %(site_name)s!\n"
+"\n"
+"Вы получаете это письмо, потому что вы или кто-то другой запросил смену "
+"пароля для учетной записи пользователя на %(site_domain)s.\n"
+"Его можно спокойно игнорировать, если вы не запрашивали сброс пароля. "
+"Нажмите на ссылку ниже, чтобы сбросить пароль."
+msgstr ""
+
+#: client/templates/account/email/password_reset_key_message.txt:8
+#, python-format
+msgid "В случае, если вы забыли, ваше имя пользователя %(username)s."
+msgstr ""
+
+#: client/templates/account/email/password_reset_key_message.txt:10
+#, python-format
+msgid ""
+"Спасибо за пользование сайтом %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+
+#: client/templates/account/email/password_reset_key_subject.txt:3
+msgid "Сброс пароля E-mail"
+msgstr ""
+
+#: client/templates/account/login.html:18
+msgid "Forgot Password?"
+msgstr ""
+
+#: client/templates/account/password_change.html:5
+msgid "Change Password"
+msgstr ""
+
+#: client/templates/account/password_reset.html:6
+msgid "Password Reset"
+msgstr ""
+
+#: client/templates/account/password_reset.html:14
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: client/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: client/templates/account/signup.html:7
+msgid "Signup"
+msgstr ""
+
+#: client/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: server/blog/views.py:27
+msgid "Test"
+msgstr "Тест"

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <div class="body">
+        {% include 'components/_sidebar.html' %}
+        <div class="col-md-9">
+            <h3>Результаты поиска.</h3>
+            <p>Категория: {{ category }}</p>
+            {% for book in object_list %}
+                <article>
+                    <a href="{% url 'book' book.title %}">
+                        <h4>{{ book.title }}</h4>
+                        {% if book.thumbnail %}
+                            <img src="{{ book.thumbnail.url }}" alt="">
+                        {% endif %}
+                        <p>{{ book.description|truncatewords:50 }}</p>
+                    </a>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

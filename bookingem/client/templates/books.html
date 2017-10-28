@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'components/_head.html' %}
+<section>
+    <div class="body">
+        {% include 'components/_sidebar.html' %}
+        <div class="col-md-9 content">
+            {{ category }} > {{ sub_category }}
+            {% for book in object_list %}
+                <article>
+                    <div class="book">
+                        <div class="col-md-4 book-img">
+                            <img src="{{ book.book_thumbnail.url }}" alt="">
+                        </div>
+                        <div class="col-md-8 book-info">
+                            <h4>{{ book.book_title }}</h4>
+                            <p>Автор: {{ book.book_author }}</p>
+                            <p>Год издания: {{ book.book_publish_year }} год</p>
+                            <p>Язык книги: {{ book.book_language }}</p>
+                            <p>Кол-во стр.:{{ book.book_count_page }}</p>
+                            <p>Тип книги:{{ book.book_type }}</p>
+                            <p>Размер: {{ book.book_size }} мб.</p>
+                            <p>Описание: {{ book.book_description|truncatewords:50 }}</p>
+                            <p>Кол-во загрузок: {{ book.book_count_downloads }}</p>
+                            {% if user.is_authenticated %}
+                                <form action="{{ book.book_link_download }}" method="get">
+                                    <button>
+                                        <i class="material-icons">file_download</i>
+                                        Загрузить
+                                    </button>
+                                </form>
+                            {% else %}
+                                <a href="{% url 'account_login' %}">Загрузить</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+            {% include 'components/_paginator.html' %}
+        </div>
+    </div>
+</section>
+{% endblock %}

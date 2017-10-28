@@ -1,7 +1,0 @@
-{% extends 'base.html' %}
-
-{% block content %}
-	{% for tag in tags %}
-		<a href="{% url 'bkgem:results' tag.name %}">{{ tag }}</a>
-	{% endfor %}
-{% endblock %}

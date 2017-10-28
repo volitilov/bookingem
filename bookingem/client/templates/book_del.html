@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+	<div class="body">
+		{% include 'components/_sidebar.html' %}
+		<div class="col-md-9">
+			<h3>{{ book.title }}</h3>
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Удалить">
+            </form>
+			<a href="{{ prev_page }}">Назад</a>
+		</div>
+	</div>
+</section>
+{% endblock %}

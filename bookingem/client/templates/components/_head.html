@@ -1,0 +1,45 @@
+{% load static %}
+<header>
+	<nav class="head">
+		<div class="navbar-left col-sm-6">
+			<a href="/" title="Back to home">
+				<hgroup>
+					<span><img src="{% static 'img/favicon.png' %}"/></span>
+					<span>
+						<h3>Bookingem</h3>
+						<p>Книги для всех</p>
+					</span>
+				</hgroup>
+			</a>
+		</div>
+		<div class="navbar-right col-sm-6">
+			<menu>
+				<li><a href="{% url 'home' %}">
+					<i class="material-icons">home</i>
+					Главная
+				</a></li>
+				{% if user.is_authenticated %}
+					<li><a href="#">
+						<i class="material-icons">notifications_none</i>	
+					</a></li>
+					<li><a href="#">
+						<i class="material-icons">sentiment_very_satisfied</i>	
+					</a></li>
+					<li>
+						<form method="post" action="/accounts/logout/">
+							{% csrf_token %}
+							<button type="submit">
+								<i class="material-icons">exit_to_app</i>
+								Выйти
+							</button>
+						</form>
+					</li>
+				{% else %}
+					<li><a href="{% url 'account_login' %}">
+						Log in
+					</a></li>
+				{% endif %}
+			</menu>
+		</div>
+	</nav>
+</header>
