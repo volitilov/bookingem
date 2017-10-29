@@ -1,26 +1,15 @@
 {% if paginator.num_pages > 1 %}
-    <div class="pagination">
+    <nav class="col-xs-12 pagination">
         {% if page_obj.has_previous %}
-            <div class="previous-page">
-                <a href="{% url 'books' category sub_category %}?page={{ page_obj.previous_page_number }}">&lt;</a>
-            </div>
+            <li>
+                <a href="{% url 'books' category sub_category %}?page={{ page_obj.previous_page_number }}">предыдущая</a>
+            </li>
         {% endif %}
+            <li>книга {{ page_obj.number }} из {{ paginator.count }}</li>
         {% if page_obj.has_next %}
-            <div class="next-page">
-                <a href="{% url 'books' category sub_category %}?page={{ page_obj.next_page_number }}">&gt;</a>
-            </div>
+            <li>
+                <a href="{% url 'books' category sub_category %}?page={{ page_obj.next_page_number }}">следующая</a>
+            </li>
         {% endif %}
-        <div class="num-pages">
-            {% for pn in paginator.page_range %}
-                {% if not forloop.first %}
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                {% endif %}
-                {% if page_obj.number != pn %}
-                    <a href="{% url 'books' category sub_category %}?page={{ pn }}">{{ pn }}</a>
-                {% else %}
-                    {{ pn }}
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+    </nav>
 {% endif %}

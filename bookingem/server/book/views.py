@@ -34,6 +34,7 @@ class BooksListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = self.sub_category.sub_category_name
+        context['categories'] = Category.objects.order_by('id')
         context['sub_category'] = self.sub_category.sub_category_name
         context['sub_categories'] = self.sub_categories
         context['books'] = self.books

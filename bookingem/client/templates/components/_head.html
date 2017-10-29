@@ -1,45 +1,52 @@
 {% load static %}
 <header>
-	<nav class="head">
-		<div class="navbar-left col-sm-6">
-			<a href="/" title="Back to home">
-				<hgroup>
-					<span><img src="{% static 'img/favicon.png' %}"/></span>
-					<span>
-						<h3>Bookingem</h3>
-						<p>Книги для всех</p>
-					</span>
-				</hgroup>
-			</a>
-		</div>
-		<div class="navbar-right col-sm-6">
+	<div class="head">
+		<ul class="navbar-left col-sm-8">
+			<li>
+				<ul>
+					<li><a href="{% url 'home' %}"></a></li>
+					{% for cat in categories %}
+						<li><a {% if cat.category_name == category %} class="active" {% endif %} 
+							href="{% url 'books' cat.category_name %}">
+							{% if cat.category_name == 'Кодинг' %}
+								<i class="material-icons">code</i>
+							{% elif cat.category_name == 'Веб технологии' %}
+								<i class="material-icons">language</i>
+							{% elif cat.category_name == 'Безопасность' %}
+								<i class="material-icons">security</i>
+							{% elif cat.category_name == 'Базы данных' %}
+								<i class="material-icons">storage</i>
+							{% elif cat.category_name == 'Операционные системы' %}
+								<i class="material-icons">devices</i>
+							{% elif cat.category_name == 'Прочее' %}
+								<i class="material-icons">folder_open</i>
+							{% endif %}
+						</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+			<li>
+				<p>{{ category }}</p>
+			</li>
+		</ul>
+		<div class="navbar-right col-sm-4">
 			<menu>
-				<li><a href="{% url 'home' %}">
-					<i class="material-icons">home</i>
-					Главная
-				</a></li>
 				{% if user.is_authenticated %}
 					<li><a href="#">
-						<i class="material-icons">notifications_none</i>	
+						<span>
+							<i class="material-icons">notifications_none</i>
+							<span>0</span>
+						</span>	
 					</a></li>
 					<li><a href="#">
-						<i class="material-icons">sentiment_very_satisfied</i>	
+						<span><i class="material-icons">sentiment_very_satisfied</i></span>
+						<span>{{ user }}</span>
 					</a></li>
-					<li>
-						<form method="post" action="/accounts/logout/">
-							{% csrf_token %}
-							<button type="submit">
-								<i class="material-icons">exit_to_app</i>
-								Выйти
-							</button>
-						</form>
-					</li>
+					<!-- <a class="logout-button" href="{% url 'account_logout' %}">Log out</a> -->
 				{% else %}
-					<li><a href="{% url 'account_login' %}">
-						Log in
-					</a></li>
+					<li><a class="login-button" href="{% url 'account_login' %}">Log in</a></li>
 				{% endif %}
 			</menu>
 		</div>
-	</nav>
+	</div>
 </header>

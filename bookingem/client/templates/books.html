@@ -3,41 +3,58 @@
 {% block content %}
 {% include 'components/_head.html' %}
 <section>
-    <div class="body">
+    <div class="col-xs-12 body">
         {% include 'components/_sidebar.html' %}
-        <div class="col-md-9 content">
-            {{ category }} > {{ sub_category }}
+        <div class="col-md-8 content">
             {% for book in object_list %}
-                <article>
-                    <div class="book">
-                        <div class="col-md-4 book-img">
-                            <img src="{{ book.book_thumbnail.url }}" alt="">
+                <article class="col-xs-12 book">
+                    <div class="col-md-4 book-img">
+                        <img src="{{ book.book_thumbnail.url }}" alt="">
+                        {% if user.is_authenticated %}
+                            <form action="{{ book.book_link_download }}" method="get">
+                                <button class="btn">
+                                    <span><i class="material-icons">file_download</i></span>
+                                    <span>Загрузить</span>
+                                    <span>&#8195;{{ book.book_size }} мб.</span>
+                                </button>
+                            </form>
+                        {% else %}
+                            <a class="btn" href="{% url 'account_login' %}">
+                                <span><i class="material-icons">file_download</i></span>
+                                <span>Загрузить</span>
+                                <span>&#8195;.{{ book.book_type }}</span>
+                            </a>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-8 book-info">
+                        <div class="book-meta">
+                            <span>Название:</span>
+                            <p><strong>{{ book.book_title }}</strong></p>
                         </div>
-                        <div class="col-md-8 book-info">
-                            <h4>{{ book.book_title }}</h4>
-                            <p>Автор: {{ book.book_author }}</p>
-                            <p>Год издания: {{ book.book_publish_year }} год</p>
-                            <p>Язык книги: {{ book.book_language }}</p>
-                            <p>Кол-во стр.:{{ book.book_count_page }}</p>
-                            <p>Тип книги:{{ book.book_type }}</p>
-                            <p>Размер: {{ book.book_size }} мб.</p>
-                            <p>Описание: {{ book.book_description|truncatewords:50 }}</p>
-                            <p>Кол-во загрузок: {{ book.book_count_downloads }}</p>
-                            {% if user.is_authenticated %}
-                                <form action="{{ book.book_link_download }}" method="get">
-                                    <button>
-                                        <i class="material-icons">file_download</i>
-                                        Загрузить
-                                    </button>
-                                </form>
-                            {% else %}
-                                <a href="{% url 'account_login' %}">Загрузить</a>
-                            {% endif %}
+                        <div class="book-meta">
+                            <span>Автор:</span>
+                            <span><p>&#8195;{{ book.book_author }}</p></span>
                         </div>
+                        <div class="book-meta">
+                            <span>Год издания:</span>
+                            <span><p>&#8195;{{ book.book_publish_year }} год</p></span>
+                        </div>
+                        <div class="book-meta">
+                            <span>Язык книги:</span>
+                            <span><p>&#8195;{{ book.book_language }}</p></span>
+                        </div>
+                        <div class="book-meta">
+                            <span>Тип файла:</span>
+                            <span><p>&#8195;{{ book.book_type }}</p></span>
+                        </div>
+                        <div class="book-meta">
+                            <span>Описание:</span>
+                            <p>{{ book.book_description|truncatewords:50 }}</p>
+                        </div>
+                        {% include 'components/_paginator.html' %}
                     </div>
                 </article>
             {% endfor %}
-            {% include 'components/_paginator.html' %}
         </div>
     </div>
 </section>

@@ -1,14 +1,21 @@
 .btn {
-    transition: .3s;
+    transition: .2s;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
+    border: none;
     border-radius: 4px;
     padding: 12px 30px;
     min-width: 100px;
     &:hover {
         cursor: pointer;
         text-decoration: none;
+    }
+    span {
+        vertical-align: top;
+        i {
+            margin-top: -3px;
+        }
     }
 }
 .btn-white {
@@ -29,10 +36,7 @@
     }
 }
 .btn-blue-light {
-    .btn;
-    background-color:#02a8f3;
-    color:#fff;
-    box-shadow: 0 .55556rem 1.11111rem -.27778rem rgba(0,0,0,0.15);
+    .btn-blue;
     background-color:#CDF2FE;
     color:#02a8f3;
     box-shadow: none;

@@ -1,29 +1,97 @@
 .head {
-    background-color: #f5f5f5;
-    padding: 20px 100px;
+    background-color: @color-blue;
     display: block;
-    overflow: hidden;
+    padding: 0px 80px;
+    margin: 20px 0px;
+    margin-bottom: 0px;
+    height: 65px;
+    box-shadow: 0 0px 5px -1px rgba(0, 0, 0, 0.3);
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li, a {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .navbar-right {
+        text-align: right;
+        menu {
+            padding: 0;
+            margin: 9px 0px;
+        }
+        a {
+            transition: .1s;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 4px 10px;
+            padding-top: 9px;
+            color: @color-grey;
+            &:hover {
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+            i {
+                margin-top: -3px;
+            }
+            span {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .login-button, .logout-button {
+            padding: 10px 15px;
+            margin-top: -1px;
+        }
+    }
+    .navbar-left {
+        li:first-child {
+            padding: 0px 10px;
+            padding-left: 20px;
+            z-index: 999;
+            margin: -10px 0px;
+            border: 5px solid @color-blue;
+            border-radius: 10px;
+            box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.3);
+            background-color:#000;
+            i {
+                font-size: 28px;
+            }
+            li:first-child {
+                padding: 0px;
+                border: none;
+                a {
+                    margin-top: -2px;
+                    padding: 18px;
+                    background-image: url('../../img/favicon_border_grey.png');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &:hover {
+                        background-image: url('../../img/favicon_border_blue.png');
+                    }
+                }
+            }
+        }
+        a {
+            transition: .2s;
+            padding: 15px 5px;
+            color: @color-grey;
+            &:hover {
+                color: @color-blue;
+            }
+        }
+        .active {
+            color: @color-blue;
+        }
+        p {
+            margin-left: 10px;
+            margin-top: 12px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    }
   }
-.head li, a {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-    text-decoration: none;
-}
-.head h3, .head p {
-    margin: 0px;
-}
-.head p {
-    font-size: 12px;
-}
-.head img {
-    margin-top: 5px;
-    width: 75%;
-}
-.head hgroup span {
-    display: inline-block;
-    vertical-align: middle;
-}
-.head .navbar-right {
-    text-align: right;
-}

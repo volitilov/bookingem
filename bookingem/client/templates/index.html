@@ -1,32 +1,40 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 <section>
-    <div class="body">
-        <div class="categories">
-            <ul>
-                {% for category in categories %}
-                    <li><a href="{% url 'books' category.category_name %}">
-                        {% if category.category_name == 'Программирование' %}
-                            <i class="material-icons">code</i>
-                        {% elif category.category_name == 'Веб технологии' %}
-                            <i class="material-icons">language</i>
-                        {% elif category.category_name == 'Безопасность' %}
-                            <i class="material-icons">security</i>
-                        {% elif category.category_name == 'Разработка' %}
-                            <i class="material-icons">content_paste</i>
-                        {% elif category.category_name == 'Базы данных' %}
-                            <i class="material-icons">storage</i>
-                        {% elif category.category_name == 'Операционные системы' %}
-                            <i class="material-icons">devices</i>
-                        {% elif category.category_name == 'Прочее' %}
-                            <i class="material-icons">folder_open</i>
-                        {% endif %}
-                        {{ category.category_name }}
-                    </a></li>
-                {% endfor %}
-            </ul>
+    <header>
+        <div class="home-head">
+            <hgroup>
+                <span><img src="{% static 'img/favicon.png' %}" alt="Bookingem logo"/></span>
+                <span>
+                    <h3>Bookingem</h3>
+                    <p>Книги для всех</p>
+                </span>
+            </hgroup>
         </div>
+    </header>
+    <div class="home-categories">
+        <ul>
+            {% for category in categories %}
+                <li><a href="{% url 'books' category.category_name %}">
+                    {% if category.category_name == 'Кодинг' %}
+                        <i class="material-icons">code</i>
+                    {% elif category.category_name == 'Веб технологии' %}
+                        <i class="material-icons">language</i>
+                    {% elif category.category_name == 'Безопасность' %}
+                        <i class="material-icons">security</i>
+                    {% elif category.category_name == 'Базы данных' %}
+                        <i class="material-icons">storage</i>
+                    {% elif category.category_name == 'Операционные системы' %}
+                        <i class="material-icons">devices</i>
+                    {% elif category.category_name == 'Прочее' %}
+                        <i class="material-icons">folder_open</i>
+                    {% endif %}
+                    <p>{{ category.category_name }}</p>
+                </a></li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 {% endblock %}
