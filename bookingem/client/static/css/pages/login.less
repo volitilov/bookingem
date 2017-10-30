@@ -1,0 +1,115 @@
+.login-page {
+    background-color: @color-blue;
+    z-index: 1;
+    padding: 25px;
+    text-align: center;
+    .choises-book {
+        .block-img {
+            float: right;
+            background-image: url('../../img/bg.png');
+            border-radius: 6px;
+            padding: 8px;
+            box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.3);
+            img {
+                border-radius: 6px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .social-button {
+        padding: 0 50px;
+        h5 {
+            margin: 0;
+            color: #fff;
+            text-align: left;
+        }
+        ul {
+            display: block;
+            background-image: url('../../img/bg.png');
+            border-radius: 6px;
+            padding: 20px;
+            li {
+                display: block;
+                padding: 7px 3px;
+                a {
+                    transition: .2s;
+                    svg {
+                        float: left;
+                    }
+                    display: block;
+                    outline: 0;
+                    vertical-align: middle;
+                    padding: 13px;
+                    border-radius: 0.25em;
+                }
+            }
+            .github-button {
+                background-color: #eff3f6;
+                background-image: -webkit-linear-gradient(top, #fafbfc, #e4ebf0);
+                background-image: -moz-linear-gradient(top, #fafbfc, #e4ebf0);
+                background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+                background-repeat: repeat-x;
+                background-size: 110% 110%;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFBFC', endColorstr='#FFE4EBF0')";
+                border: 1px solid #d1d2d3;
+                color: #24292e;
+                &:hover {
+                    background-color: #e6ebf1;
+                    background-image: -webkit-linear-gradient(top, #f0f3f6, #dce3ec);
+                    background-image: -moz-linear-gradient(top, #f0f3f6, #dce3ec);
+                    background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
+                    border-color: #afb1b2;
+                }
+            }
+            .google-button {
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: background-color .218s,border-color .218s,box-shadow .218s;
+                transition: background-color .218s,border-color .218s,box-shadow .218s;
+                -webkit-user-select: none;
+                -webkit-appearance: none;
+                background-color: #fff;
+                background-image: none;
+                color: #262626;
+                vertical-align: middle;
+                white-space: nowrap;
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+            .facebook-button {
+                background-color: #4267b2;
+                color: #fff;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+                &:hover {
+                    box-shadow: none;
+                }                
+            }
+            .twitter-button {
+                background-color: #1b95e0;
+                color: #fff;
+                svg {
+                    margin-top: -4px;
+                }
+                &:hover {
+                    background-color: #0c7abf;
+                }
+            }
+            .vk-button {
+                color: #fff;
+                background-color: #5e81a8;
+                &:hover {
+                    background-color: #6888ad;
+                }
+            }
+            .ok-button {
+                color: #fff;
+                background-color: #ee8208;
+                &:hover { 
+                }
+            }
+        }
+    }
+}

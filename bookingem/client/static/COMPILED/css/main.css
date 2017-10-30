@@ -1220,6 +1220,9 @@ article .book-info .book-meta {
   border-bottom: 1px solid #cecece;
   padding: 0px;
 }
+article .book-info .book-meta p {
+  margin: 7px 0px;
+}
 article .book-info .book-meta span {
   margin: 0;
   padding: 0;
@@ -1315,6 +1318,12 @@ article .book-info .book-meta span:first-child {
   float: right;
   padding: 0;
 }
+.pagination a {
+  color: #02a8f3;
+}
+.pagination a:hover {
+  color: #393e46;
+}
 .sidebar {
   margin-left: 7px;
   width: 370px;
@@ -1403,4 +1412,115 @@ article .book-info .book-meta span:first-child {
   margin-right: 0px;
   padding: 0px 20px;
   padding-right: 0px;
+}
+.login-page {
+  background-color: #02a8f3;
+  z-index: 1;
+  padding: 25px;
+  text-align: center;
+}
+.login-page .choises-book .block-img {
+  float: right;
+  background-image: url('/static/img/bg.png');
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.login-page .choises-book .block-img img {
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+}
+.login-page .social-button {
+  padding: 0 50px;
+}
+.login-page .social-button h5 {
+  margin: 0;
+  color: #fff;
+  text-align: left;
+}
+.login-page .social-button ul {
+  display: block;
+  background-image: url('/static/img/bg.png');
+  border-radius: 6px;
+  padding: 20px;
+}
+.login-page .social-button ul li {
+  display: block;
+  padding: 7px 3px;
+}
+.login-page .social-button ul li a {
+  transition: .2s;
+  display: block;
+  outline: 0;
+  vertical-align: middle;
+  padding: 13px;
+  border-radius: 0.25em;
+}
+.login-page .social-button ul li a svg {
+  float: left;
+}
+.login-page .social-button ul .github-button {
+  background-color: #eff3f6;
+  background-image: -webkit-linear-gradient(top, #fafbfc, #e4ebf0);
+  background-image: -moz-linear-gradient(top, #fafbfc, #e4ebf0);
+  background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+  background-repeat: repeat-x;
+  background-size: 110% 110%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFBFC', endColorstr='#FFE4EBF0')";
+  border: 1px solid #d1d2d3;
+  color: #24292e;
+}
+.login-page .social-button ul .github-button:hover {
+  background-color: #e6ebf1;
+  background-image: -webkit-linear-gradient(top, #f0f3f6, #dce3ec);
+  background-image: -moz-linear-gradient(top, #f0f3f6, #dce3ec);
+  background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
+  border-color: #afb1b2;
+}
+.login-page .social-button ul .google-button {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+  transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+  -webkit-user-select: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  color: #262626;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.login-page .social-button ul .google-button:hover {
+  box-shadow: none;
+}
+.login-page .social-button ul .facebook-button {
+  background-color: #4267b2;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.login-page .social-button ul .facebook-button:hover {
+  box-shadow: none;
+}
+.login-page .social-button ul .twitter-button {
+  background-color: #1b95e0;
+  color: #fff;
+}
+.login-page .social-button ul .twitter-button svg {
+  margin-top: -4px;
+}
+.login-page .social-button ul .twitter-button:hover {
+  background-color: #0c7abf;
+}
+.login-page .social-button ul .vk-button {
+  color: #fff;
+  background-color: #5e81a8;
+}
+.login-page .social-button ul .vk-button:hover {
+  background-color: #6888ad;
+}
+.login-page .social-button ul .ok-button {
+  color: #fff;
+  background-color: #ee8208;
 }
