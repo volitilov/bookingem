@@ -23,7 +23,7 @@ class SubCategory(models.Model):
         verbose_name = 'подкатегория'
         verbose_name_plural = 'подкатегории'
 
-    sub_category_name = models.CharField(max_length=30, unique=True, verbose_name='название')
+    sub_category_name = models.CharField(max_length=30, verbose_name='название')
     parent_category = models.ForeignKey(Category, verbose_name='категория')
 
     def __str__(self):
